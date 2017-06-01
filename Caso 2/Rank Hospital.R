@@ -14,6 +14,11 @@ rankhospital<-function(estado,resultado,numero){
     }else {
         stop("¡RESULTADO INVALIDO!")
     }
+	
+    #IF PARA LOS ESTADOS
+    if (estado %in% estados==F){
+        stop("¡ESTADO INVALIDO!")
+    }
 
  vectorhos<-c()
  vectornum<-c()
